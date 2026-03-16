@@ -1,0 +1,12 @@
+{
+  "name": "fallacy-aware",
+  "description": "Critical thinking skills for Claude Code: 24 logical fallacies and engineering principles that activate as cognitive guardrails during software engineering decisions",
+  "version": "1.0.0",
+  "author": {
+    "name": "Kyle Scully"
+  },
+  "homepage": "https://github.com/kylescully/fallacy-aware",
+  "repository": "https://github.com/kylescully/fallacy-aware",
+  "license": "MIT",
+  "keywords": ["skills", "fallacies", "critical-thinking", "code-review", "guardrails", "principles"]
+}

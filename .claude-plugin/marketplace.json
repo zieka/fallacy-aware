@@ -1,0 +1,13 @@
+{
+  "name": "fallacy-aware",
+  "description": "Critical thinking skills for Claude Code",
+  "owner": {
+    "name": "Kyle Scully"
+  },
+  "plugins": [
+    {
+      "name": "fallacy-aware",
+      "path": "."
+    }
+  ]
+}
