@@ -7,7 +7,9 @@
   "plugins": [
     {
       "name": "fallacy-aware",
-      "path": "."
+      "description": "Critical thinking skills for Claude Code: 24 logical fallacies and engineering principles as cognitive guardrails",
+      "version": "1.0.0",
+      "source": "./"
     }
   ]
 }
