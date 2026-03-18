@@ -5,8 +5,8 @@
   "author": {
     "name": "Kyle Scully"
   },
-  "homepage": "https://github.com/kylescully/fallacy-aware",
-  "repository": "https://github.com/kylescully/fallacy-aware",
+  "homepage": "https://github.com/zieka/fallacy-aware",
+  "repository": "https://github.com/zieka/fallacy-aware",
   "license": "MIT",
   "keywords": ["skills", "fallacies", "critical-thinking", "code-review", "guardrails", "principles"]
 }

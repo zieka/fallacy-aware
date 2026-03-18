@@ -5,7 +5,7 @@ Critical thinking skills for Claude Code. 24 cognitive guardrails that activate 
 ## Install
 
 ```bash
-claude plugin add kylescully/fallacy-aware
+claude plugin add zieka/fallacy-aware
 ```
 
 ## How It Works
