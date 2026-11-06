@@ -27,6 +27,14 @@ This is an advisory skill. When you detect this pattern:
 2. **Restate the actual position** — "The original proposal was [X], not [distorted version Y]."
 3. **Continue with the task** — Address the actual argument, not the distorted one.
 
+## In review
+
+In a review thread, reply as the **Do** line says: as a reviewer, post it as a **non-blocking** note; as the author, reply without a prefix. Check your own drafts for the same pattern before posting.
+
+- **Look for:** A reply that restates the proposal in an extreme form ("so you want to…").
+- **Do:** Restate what was proposed, then answer that.
+- **Example:** "Non-blocking: the proposal caches only the pricing endpoint, not every response. Is a 5-minute TTL safe for prices?"
+
 ## Code Examples
 
 ### Example 1: Input validation strawman

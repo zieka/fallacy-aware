@@ -37,6 +37,14 @@ Before adding another workaround or continuing down a failing path, you MUST:
    - "Alternative approaches: [list with honest comparison]"
    - "Recommendation: [continue/pivot/revert]"
 
+## In review
+
+In a review the author made the change, so this gate becomes a **blocking question**: post it, and don't approve until it's answered. Skip it only if the PR or its history fully answers it.
+
+- **Look for:** Another workaround on an approach the PR history shows failing, or a justification based on time already spent.
+- **Ask:** "Starting today, would we choose this approach?"
+- **Example:** "Blocking: this is the fourth patch to the polling loop this month. Would a webhook be simpler than a fifth?"
+
 ## Code Examples
 
 ### Example 1: The workaround-laden library

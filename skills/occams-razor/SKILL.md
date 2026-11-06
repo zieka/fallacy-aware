@@ -28,6 +28,14 @@ This is an advisory skill. When you detect this pattern:
 2. **Start simple** — "What's the simplest explanation that fits the evidence? Have we ruled that out?"
 3. **Continue with the task** — Try the simple hypothesis first before investing in the complex one.
 
+## In review
+
+In a review, post this as a **non-blocking** note. Skip it if the PR already answers it.
+
+- **Look for:** An elaborate explanation or fix where a simpler one fits the evidence.
+- **Ask:** "Have we ruled out the simpler cause?"
+- **Example:** "Non-blocking: before a kernel race, did we rule out the config change in the same deploy?"
+
 ## Code Examples
 
 ### Example 1: Debugging complexity

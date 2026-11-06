@@ -36,6 +36,14 @@ Before agreeing to a rewrite, you MUST:
    - "My recommendation: [rewrite/refactor/hybrid]"
 5. **If rewrite proceeds** — Recommend starting with the simplest possible version that works, then evolving. A complex system designed from scratch will not work.
 
+## In review
+
+In a review the author made the change, so this gate becomes a **blocking question**: post it, and don't approve until it's answered. Skip it only if the PR or its history fully answers it.
+
+- **Look for:** A working module replaced in one PR, with the old path deleted.
+- **Ask:** "Can this land in steps that each work, with the old path running until the new one matches it?"
+- **Example:** "Blocking: this replaces the whole sync engine at once. Can we move one job type to the new path first?"
+
 ## Code Examples
 
 ### Example 1: Rewriting a "messy" parser

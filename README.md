@@ -13,15 +13,27 @@ Inside a Claude Code session:
 
 ## How It Works
 
-Skills activate two ways:
+Skills activate three ways:
 
 - **Explicitly** — invoke `fallacy-aware:<skill-name>` directly
-- **Contextually** — Claude detects trigger patterns and activates the appropriate skill automatically
+- **In reviews** — hooks point Claude at `fallacy-aware:review` when a review starts (see [Reviews](#reviews))
+- **Contextually** — Claude may load a skill when its description matches the task
 
 ### Severity Levels
 
-- **Gate** — Claude stops and researches before proceeding. Used for irreversible or high-impact actions.
-- **Advisory** — Claude flags the potential fallacy, explains briefly, and continues. Used for reasoning patterns.
+- **Gate** — Claude stops and researches before proceeding. Used for irreversible or high-impact actions. In a review, a gate becomes a blocking question to the author.
+- **Advisory** — Claude flags the potential fallacy, explains briefly, and continues. Used for reasoning patterns. In a review, an advisory becomes a non-blocking note.
+
+## Reviews
+
+`fallacy-aware:review` checks a diff, its PR description, and the review thread against all 24 skills, and phrases each hit as a question for the author. Each skill's `## In review` section covers its case in depth.
+
+The plugin's hooks (`hooks/hooks.json`) add one line of context naming that skill when a review starts:
+
+- **`UserPromptExpansion`** — you type a command such as `/code-review`, `/review`, or `/pr-review-toolkit:review-pr`
+- **`PreToolUse` on `Skill`** — Claude starts a review skill itself
+
+A name matches when it contains `review` or `pr-comments` as whole words (`code-review`, `review-pr`, `leave-pr-comments`; not `preview`). Names starting with `fallacy-aware:` never match. The hooks need `bash`.
 
 ## Skills
 
@@ -91,6 +103,22 @@ These skills flag reasoning patterns and continue.
 > **You:** "This approach isn't working perfectly but we've already put two days into it. Let's just add one more workaround."
 >
 > **Claude (with fallacy-aware):** "Let me step back — we've added 4 workarounds in 2 days. Fresh-start test: if we were starting today, would we choose this approach? A simpler alternative would handle this naturally without workarounds. The 2 days are spent either way. Recommend: spend 3 hours trying the simpler approach."
+
+### Review: Hyrum's Law
+
+> **You:** "/code-review" on a PR that renames `id` to `projectId` in the CLI's `--json` output.
+>
+> **Claude (with fallacy-aware):** "Blocking: scripts may parse `id` from `--json`. Can we emit both fields for a release, with a deprecation note?"
+
+## Evals
+
+`evals/` holds review cases: removed code, changed error text, a changed sort order, a straw-man thread, a slippery-slope comment, and a clean diff as a negative control. From the repo root:
+
+```
+claude plugin eval . --ablation none --trust-plugin --no-publish
+```
+
+Each run calls the model on your account, so it counts against your plan's usage or your API bill.
 
 ## License
 

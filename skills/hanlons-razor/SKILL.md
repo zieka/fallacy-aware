@@ -28,6 +28,14 @@ This is an advisory skill. When you detect this pattern:
 2. **Consider the constraints** — "What was the timeline? What tools were available? What were the requirements at the time? What knowledge did the author have?"
 3. **Continue with the task** — Focus on improving the code rather than judging the person.
 
+## In review
+
+In a review thread, reply as the **Do** line says: as a reviewer, post it as a **non-blocking** note; as the author, reply without a prefix. Check your own drafts for the same pattern before posting.
+
+- **Look for:** A comment that attributes a choice to carelessness or bad intent.
+- **Do:** Ask what constraints the author had.
+- **Example:** "Non-blocking: was this written before the bulk API existed? If so, should we switch now?"
+
 ## Code Examples
 
 ### Example 1: "Garbage" code

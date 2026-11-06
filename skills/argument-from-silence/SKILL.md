@@ -29,6 +29,14 @@ This is an advisory skill. When you detect this pattern:
 2. **Ask what would surface the problem** — "If this problem existed, would we know? Do we have the monitoring, reporting, and testing to detect it?"
 3. **Continue with the task** — Don't block; just surface the gap in reasoning.
 
+## In review
+
+In a review, post this as a **non-blocking** note. Skip it if the PR already answers it.
+
+- **Look for:** "No errors or complaints, so it's safe" in the PR or thread.
+- **Ask:** "Would we see errors if it failed?"
+- **Example:** "Non-blocking: no alerts fired, but is this path logged or monitored?"
+
 ## Code Examples
 
 ### Example 1: No errors in logs

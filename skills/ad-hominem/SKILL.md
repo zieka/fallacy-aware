@@ -28,6 +28,14 @@ This is an advisory skill. When you detect this pattern:
 2. **Redirect to merit** — "Regardless of who wrote/proposed this, does the technical argument hold up?"
 3. **Continue with the task** — Evaluate the code or argument on its own merits.
 
+## In review
+
+In a review thread, reply as the **Do** line says: as a reviewer, post it as a **non-blocking** note; as the author, reply without a prefix. Check your own drafts for the same pattern before posting.
+
+- **Look for:** Input dismissed by who gave it ("they're new here", "that team always…").
+- **Do:** Judge the argument on its merits.
+- **Example:** "Non-blocking: whoever suggested it, does batching remove the N+1 queries?"
+
 ## Code Examples
 
 ### Example 1: Dismissing junior code

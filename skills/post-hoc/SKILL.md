@@ -28,6 +28,14 @@ This is an advisory skill. When you detect this pattern:
 2. **Look for the mechanism** — "Can we identify the specific causal chain from the change to the problem? Not just timing, but how would change A actually cause problem B?"
 3. **Continue with the task** — Investigate the actual cause rather than assuming the most recent change is responsible.
 
+## In review
+
+In a review, post this as a **non-blocking** note. Skip it if the PR already answers it.
+
+- **Look for:** "A changed, then B broke, so A caused B" in the PR description or thread.
+- **Ask:** "What's the mechanism, and what else changed then?"
+- **Example:** "Non-blocking: the latency rise lines up with the deploy, but also with the traffic spike. What links this change to it?"
+
 ## Code Examples
 
 ### Example 1: Deploy blame

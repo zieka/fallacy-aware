@@ -28,6 +28,14 @@ This is an advisory skill. When you detect this pattern:
 2. **Check alignment** — "Do the service/module boundaries align with domain boundaries, or with team boundaries? These aren't always the same."
 3. **Continue with the task** — Don't block; surface the structural influence.
 
+## In review
+
+In a review, post this as a **non-blocking** note. Skip it if the PR already answers it.
+
+- **Look for:** Module or service boundaries drawn along team lines rather than the domain.
+- **Ask:** "Would the domain split here if one team owned both sides?"
+- **Example:** "Non-blocking: this API exists so two teams don't share a module. Does the domain split here?"
+
 ## Code Examples
 
 ### Example 1: Team-shaped services

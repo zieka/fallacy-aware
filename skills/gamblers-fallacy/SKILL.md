@@ -28,6 +28,14 @@ This is an advisory skill. When you detect this pattern:
 2. **Reframe around probability** — "If the probability of failure hasn't changed, a streak of successes doesn't make failure less likely."
 3. **Continue with the task** — Don't block; surface the reasoning error.
 
+## In review
+
+In a review, post this as a **non-blocking** note. Skip it if the PR already answers it.
+
+- **Look for:** A streak used as evidence: "it always passes, so skip it" or "it failed three times, so it's due to pass".
+- **Ask:** "What changed between runs?"
+- **Example:** "Non-blocking: nothing changes between attempts. What makes attempt 4 different?"
+
 ## Code Examples
 
 ### Example 1: Skipping test runs
