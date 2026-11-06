@@ -28,6 +28,14 @@ This is an advisory skill. When you detect this pattern:
 2. **Ask for the technical reason** — "What's the technical justification for this practice, beyond it being how it's always been done?"
 3. **Continue with the task** — Don't block; just surface the question.
 
+## In review
+
+In a review, post this as a **non-blocking** note. Skip it if the PR already answers it.
+
+- **Look for:** "We've always done it this way" as the reason to keep or add a practice.
+- **Ask:** "What's the technical reason today?"
+- **Example:** "Non-blocking: is there a reason beyond habit for the manual release step?"
+
 ## Code Examples
 
 ### Example 1: Callback resistance

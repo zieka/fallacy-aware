@@ -34,6 +34,14 @@ Before accepting a binary framing, you MUST:
    - **Incremental path** — Is there a gradual migration rather than a binary switch?
 3. **Present the full option space** — Show all options (original + new) with trade-offs before deciding.
 
+## In review
+
+In a review the author made the change, so this gate becomes a **blocking question**: post it, and don't approve until it's answered. Skip it only if the PR or its history fully answers it.
+
+- **Look for:** A PR description or design doc that weighs only two options.
+- **Ask:** "What other options did we rule out, including doing nothing or a smaller step?"
+- **Example:** "Blocking: the doc compares Kafka with a rewrite. Did we rule out an index on the current queue table?"
+
 ## Code Examples
 
 ### Example 1: Database selection

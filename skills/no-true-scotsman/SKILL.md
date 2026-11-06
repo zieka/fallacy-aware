@@ -28,6 +28,14 @@ This is an advisory skill. When you detect this pattern:
 2. **Anchor to the original claim** — "The original statement was [X]. This counterexample [Y] appears to disprove it. Should we update the original claim rather than exclude the counterexample?"
 3. **Continue with the task** — Don't block; just surface the pattern.
 
+## In review
+
+In a review thread, reply as the **Do** line says: as a reviewer, post it as a **non-blocking** note; as the author, reply without a prefix. Check your own drafts for the same pattern before posting.
+
+- **Look for:** A term redefined to exclude a counterexample ("a real unit test wouldn't…").
+- **Do:** Update the claim, not the definition.
+- **Example:** "Non-blocking: if this test caught the bug, does it matter that it touches the DB?"
+
 ## Code Examples
 
 ### Example 1: Bug dismissal

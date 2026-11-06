@@ -28,6 +28,14 @@ This is an advisory skill. When you detect this pattern:
 2. **Ask about sample size** — "How many data points is this conclusion based on? Is that enough to generalize?"
 3. **Continue with the task** — Don't block; just surface the concern about insufficient evidence.
 
+## In review
+
+In a review, post this as a **non-blocking** note. Skip it if the PR already answers it.
+
+- **Look for:** A claim backed by one or two runs or cases ("fixes the flake", "faster").
+- **Ask:** "How many runs or cases back this?"
+- **Example:** "Non-blocking: one green CI run may not show the flake is gone. Can we run it 20 times?"
+
 ## Code Examples
 
 ### Example 1: Library judgment

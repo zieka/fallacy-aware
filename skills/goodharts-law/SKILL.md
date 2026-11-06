@@ -28,6 +28,14 @@ This is an advisory skill. When you detect this pattern:
 2. **Identify the real goal** — "What is this metric supposed to indicate? Are we still optimizing for that, or have we started optimizing for the number itself?"
 3. **Continue with the task** — Don't block; surface the distinction between the metric and the goal.
 
+## In review
+
+In a review, post this as a **non-blocking** note. Skip it if the PR already answers it.
+
+- **Look for:** A change that moves a metric (coverage, lint count, benchmark) without the goal behind it.
+- **Ask:** "Does the goal improve, or only the number?"
+- **Example:** "Non-blocking: these tests raise coverage but assert nothing. What behavior should they check?"
+
 ## Code Examples
 
 ### Example 1: Coverage theater

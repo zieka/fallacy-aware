@@ -28,6 +28,14 @@ This is an advisory skill. When you detect this pattern:
 2. **Evaluate independently** — "Regardless of whether the critic follows their own advice, is the feedback correct?"
 3. **Continue with the task** — Address the substance of the criticism.
 
+## In review
+
+In a review thread, reply as the **Do** line says: as a reviewer, post it as a **non-blocking** note; as the author, reply without a prefix. Check your own drafts for the same pattern before posting.
+
+- **Look for:** A reply that answers criticism with "you do it too".
+- **Do:** Address the criticism itself.
+- **Example:** "Non-blocking: fair, the billing module does this too. Should we fix both, starting here?"
+
 ## Code Examples
 
 ### Example 1: Code review deflection

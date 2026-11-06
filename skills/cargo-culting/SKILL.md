@@ -38,6 +38,14 @@ Before adopting a pattern, tool, or practice, you MUST:
    - "Simpler alternative: [if applicable]"
    - "Recommendation: [adopt/skip/use simpler alternative]"
 
+## In review
+
+In a review the author made the change, so this gate becomes a **blocking question**: post it, and don't approve until it's answered. Skip it only if the PR or its history fully answers it.
+
+- **Look for:** A new pattern, tool, or framework with no stated problem it solves here ("X uses it", "best practice").
+- **Ask:** "What problem in our code does this solve, and do we meet what it needs to work?"
+- **Example:** "Blocking: what problem does the event bus solve for our two services? A direct call seems to cover it."
+
 ## Code Examples
 
 ### Example 1: Kubernetes for a weekend project

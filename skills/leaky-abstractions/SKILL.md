@@ -28,6 +28,14 @@ This is an advisory skill. When you detect this pattern:
 2. **Identify the leak** — "What underlying behavior is showing through? Understanding that is the fix, not hiding it."
 3. **Continue with the task** — Don't block; surface the observation that the right fix is understanding the layer beneath, not adding layers above.
 
+## In review
+
+In a review, post this as a **non-blocking** note. Skip it if the PR already answers it.
+
+- **Look for:** A new wrapper or layer added to hide a failing abstraction.
+- **Ask:** "What does the layer below do here?"
+- **Example:** "Non-blocking: the retry wrapper hides pool timeouts. Should we size the pool instead?"
+
 ## Code Examples
 
 ### Example 1: ORM wrapper

@@ -28,6 +28,14 @@ This is an advisory skill. When you detect this pattern:
 2. **Ask for the evaluation** — "What specific problem does the new tool solve that the current one doesn't? What are we giving up by switching?"
 3. **Continue with the task** — Don't block; just surface the question.
 
+## In review
+
+In a review, post this as a **non-blocking** note. Skip it if the PR already answers it.
+
+- **Look for:** A library or tool chosen mainly because it's new or popular.
+- **Ask:** "What does it do better than what we have, and what do we give up?"
+- **Example:** "Non-blocking: what does the new ORM fix that ours doesn't? The migration looks costly."
+
 ## Code Examples
 
 ### Example 1: The hot new framework

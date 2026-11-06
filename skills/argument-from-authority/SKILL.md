@@ -28,6 +28,14 @@ This is an advisory skill. When you detect this pattern:
 2. **Evaluate on merit** — "Regardless of who said it, does this approach make sense for our specific context?"
 3. **Continue with the task** — Don't dismiss the authority outright; just ensure the claim also holds on its own merits.
 
+## In review
+
+In a review, post this as a **non-blocking** note. Skip it if the PR already answers it.
+
+- **Look for:** "An expert, vendor, or big company does it" as the only reason.
+- **Ask:** "Does it hold for our case?"
+- **Example:** "Non-blocking: Google shards at their scale; our table is 2 GB. What do we gain?"
+
 ## Code Examples
 
 ### Example 1: Senior engineer's recommendation

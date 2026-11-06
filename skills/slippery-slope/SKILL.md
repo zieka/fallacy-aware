@@ -28,6 +28,14 @@ This is an advisory skill. When you detect this pattern:
 2. **Examine each step** — "Is there evidence that step A actually leads to step B? Each transition needs its own justification."
 3. **Continue with the task** — Don't block; just surface the analysis.
 
+## In review
+
+In a review thread, reply as the **Do** line says: as a reviewer, post it as a **non-blocking** note; as the author, reply without a prefix. Check your own drafts for the same pattern before posting.
+
+- **Look for:** A comment that predicts disaster through steps with no evidence for each.
+- **Do:** Ask for evidence for each step, or argue from this change alone.
+- **Example:** "Non-blocking: does this one feature flag lead to flags everywhere? Could we give it a removal date instead?"
+
 ## Code Examples
 
 ### Example 1: Linting exceptions

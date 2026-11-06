@@ -36,6 +36,14 @@ Before changing observable behavior, you MUST:
    - "Proposed migration: [approach]"
    - "Risk level: [low/medium/high]"
 
+## In review
+
+In a review the author made the change, so this gate becomes a **blocking question**: post it, and don't approve until it's answered. Skip it only if the PR or its history fully answers it.
+
+- **Look for:** Changed error text or codes, defaults, response shape or field order, CLI output, or timing.
+- **Ask:** "Who depends on the old behavior, and how will they find out?"
+- **Example:** "Blocking: `--json` output no longer has `id`. Do any scripts parse it? Can we keep `id` for a release with a deprecation note?"
+
 ## Code Examples
 
 ### Example 1: Changing error message text

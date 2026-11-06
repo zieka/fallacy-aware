@@ -33,6 +33,14 @@ Before proceeding with an expanded rebuild, you MUST:
    - "Each addition increases risk of the replacement never shipping"
    - "Recommend: ship minimum replacement first, add features after it's working"
 
+## In review
+
+In a review the author made the change, so this gate becomes a **blocking question**: post it, and don't approve until it's answered. Skip it only if the PR or its history fully answers it.
+
+- **Look for:** A replacement whose scope goes past the original, such as plugin systems, config layers, or features nobody asked for.
+- **Ask:** "Which of these additions does the first release need?"
+- **Example:** "Blocking: the old exporter wrote CSV only; this adds plugins, templates, and scheduling. Can we ship CSV parity first?"
+
 ## Code Examples
 
 ### Example 1: The config parser rewrite

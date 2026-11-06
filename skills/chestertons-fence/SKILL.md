@@ -35,6 +35,14 @@ Before removing anything, you MUST:
    - "My recommendation: [remove/keep/modify]"
 5. **Wait for confirmation** — Do not proceed with removal until the user acknowledges the findings.
 
+## In review
+
+In a review the author made the change, so this gate becomes a **blocking question**: post it, and don't approve until it's answered. Skip it only if the PR or its history fully answers it.
+
+- **Look for:** Deleted code, config, tests, flags, or dependencies with no reason given in the PR. Run `git log -S '<removed line>'` or `git blame` first; if history explains it, cite it in the question.
+- **Ask:** "Why did this exist, and what covers that case now?"
+- **Example:** "Blocking: `git log -S 'time.sleep(2)'` shows this landed in #142 for a Postgres startup race. What covers that race now?"
+
 ## Code Examples
 
 ### Example 1: The mysterious sleep call
